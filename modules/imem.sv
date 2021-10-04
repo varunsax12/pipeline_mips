@@ -7,7 +7,7 @@ module imem
     logic [31:0] RAM [0:63];
 
     initial
-        $readmemh("/user/a0230100/verilog_training/pipeline_mips/memfile.dat", RAM);
+        $readmemh("/home/verilog_training/pipeline_mips/memfile.dat", RAM);
 
     assign rd = RAM[addr];
 endmodule
